@@ -68,6 +68,14 @@ public class Square {
         int xLoc = (row + 1) * 100;
         int yLoc = (col + 1) * 100;
         g.drawRect(xLoc, yLoc, 100, 100);
+
+        // Highlighting winning squares
+        if (isWinningSquare == true) {
+            g.setColor(Color.GREEN);
+            g.fillRect(xLoc, yLoc, 100, 100);
+            g.setColor(Color.BLACK);
+        }
+
         if (marker.equals("O")) {
             g.drawImage(window.getMarkerO(), xLoc, yLoc, 100, 100, window);
         }

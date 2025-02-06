@@ -106,6 +106,7 @@ public class TicTacToe
         }
     }
 
+
     /**
      * Maintains the main game loop
      * Runs until a player wins or there is a tie.
@@ -145,6 +146,7 @@ public class TicTacToe
                 System.out.println("X Wins!");
             }
         }
+        window.repaint();
     }
 
 
